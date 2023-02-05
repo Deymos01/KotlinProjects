@@ -37,10 +37,8 @@ fun guessAge() {
 
 fun count() {
     println("Now I will prove to you that I can count to any number you want.")
-    val num = scanner.nextInt()
-    for (i in 0..num) {
-        print(i)
-        println("!")
+    repeat(scanner.nextInt() + 1) {
+        println("$it!")
     }
 }
 
